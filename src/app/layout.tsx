@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.usrguvenlik.com"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://usrozelguvenlik.com"),
   title: {
     default: "USR Özel Güvenlik | Profesyonel Güvenlik ve Personel Çözümleri",
     template: "%s | USR Özel Güvenlik",
