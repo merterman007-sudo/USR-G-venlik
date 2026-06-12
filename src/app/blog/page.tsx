@@ -19,10 +19,10 @@ export default function BlogPage() {
       <section className="bg-gradient-to-b from-white via-[#f8fbff] to-[#eef5fb] py-20 text-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: "Ana Sayfa", href: "/" }, { name: "Blog", href: "/blog" }]} />
-          <h1 className="mt-8 max-w-4xl text-5xl font-black tracking-tight sm:text-6xl">Kurumsal hizmetlerde bilinçli karar rehberi.</h1>
+          <h1 className="mt-8 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">Kurumsal hizmetlerde bilinçli karar rehberi.</h1>
         </div>
       </section>
-      <section className="bg-slate-50 py-24">
+      <section className="bg-slate-50 py-16 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="Blog" title="Güvenlik, temizlik ve organizasyon içgörüleri" />
           <div className="mt-8 flex flex-wrap gap-2">

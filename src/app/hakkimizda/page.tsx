@@ -17,14 +17,14 @@ export default function AboutPage() {
       <section className="bg-gradient-to-b from-white via-[#f8fbff] to-[#eef5fb] py-20 text-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: "Ana Sayfa", href: "/" }, { name: "Hakkımızda", href: "/hakkimizda" }]} />
-          <h1 className="mt-8 max-w-4xl text-5xl font-black tracking-tight sm:text-6xl">Kurumsal güveni sahada temsil eden ekip.</h1>
+          <h1 className="mt-8 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">Kurumsal güveni sahada temsil eden ekip.</h1>
           <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
             USR Özel Güvenlik; güvenlik, temizlik ve organizasyon personeli alanlarında kurumların operasyonel sürekliliğini destekleyen profesyonel bir çözüm ortağıdır.
           </p>
         </div>
       </section>
 
-      <section className="bg-white py-24">
+      <section className="bg-white py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <SectionHeading
             eyebrow="Şirket Hikayesi"
@@ -44,7 +44,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-[#f4f8fd] py-24">
+      <section className="bg-[#f4f8fd] py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <div>
             <SectionHeading eyebrow="Değerlerimiz" title="Her görev noktasında aynı standart" />

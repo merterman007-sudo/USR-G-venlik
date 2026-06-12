@@ -22,7 +22,7 @@ export function Header() {
             width={748}
             height={581}
             priority
-            className="h-16 w-auto object-contain sm:h-[4.5rem]"
+            className="h-14 w-auto object-contain sm:h-[4.5rem]"
           />
         </Link>
 
@@ -87,7 +87,10 @@ export function Header() {
 
       <div
         id="mobile-navigation"
-        className={cn("border-t border-slate-200 bg-white px-4 py-5 lg:hidden", open ? "block" : "hidden")}
+        className={cn(
+          "max-h-[calc(100vh-5rem)] overflow-y-auto border-t border-slate-200 bg-white px-4 py-5 lg:hidden",
+          open ? "block" : "hidden",
+        )}
       >
         <div className="mx-auto flex max-w-7xl flex-col gap-2">
           {navigation.map((item) => (

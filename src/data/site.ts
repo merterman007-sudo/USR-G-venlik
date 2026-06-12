@@ -40,6 +40,7 @@ export const services = [
   {
     title: "Özel Güvenlik Hizmetleri",
     slug: "ozel-guvenlik-hizmetleri",
+    image: "/images/services/ozel-guvenlik.jpg",
     icon: ShieldCheck,
     category: "Güvenlik",
     summary: "Kurumsal tesisler, yaşam alanları ve organizasyonlar için risk odaklı özel güvenlik operasyonları.",
@@ -51,6 +52,7 @@ export const services = [
   {
     title: "Silahlı Güvenlik",
     slug: "silahli-guvenlik",
+    image: "/images/services/silahli-guvenlik.jpg",
     icon: ShieldUser,
     category: "Güvenlik",
     summary: "Yüksek riskli alanlar için mevzuata uygun, disiplinli ve deneyimli silahlı güvenlik personeli.",
@@ -62,6 +64,7 @@ export const services = [
   {
     title: "Silahsız Güvenlik",
     slug: "silahsiz-guvenlik",
+    image: "/images/services/silahsiz-guvenlik.jpg",
     icon: MonitorCheck,
     category: "Güvenlik",
     summary: "Giriş kontrolü, devriye, danışma ve kamera izleme süreçlerini kapsayan profesyonel güvenlik.",
@@ -73,6 +76,7 @@ export const services = [
   {
     title: "Site ve Residence Güvenliği",
     slug: "site-residence-guvenligi",
+    image: "/images/services/site-residence-guvenligi.jpg",
     icon: Building2,
     category: "Güvenlik",
     summary: "Yaşam alanlarında sakin memnuniyetini, erişim kontrolünü ve düzenli devriyeyi bir araya getirir.",
@@ -84,6 +88,7 @@ export const services = [
   {
     title: "AVM Güvenliği",
     slug: "avm-guvenligi",
+    image: "/images/services/avm-guvenligi.jpg",
     icon: Store,
     category: "Güvenlik",
     summary: "Yoğun ziyaretçi trafiğine sahip alışveriş merkezleri için görünür, koordineli ve hızlı güvenlik hizmeti.",
@@ -95,6 +100,7 @@ export const services = [
   {
     title: "Fabrika Güvenliği",
     slug: "fabrika-guvenligi",
+    image: "/images/services/fabrika-guvenligi.jpg",
     icon: Factory,
     category: "Güvenlik",
     summary: "Üretim tesisleri, depolar ve lojistik alanlar için giriş, çevre ve sevkiyat güvenliği.",
@@ -106,6 +112,7 @@ export const services = [
   {
     title: "Hastane Güvenliği",
     slug: "hastane-guvenligi",
+    image: "/images/services/hastane-guvenligi.jpg",
     icon: HeartPulse,
     category: "Güvenlik",
     summary: "Hasta, ziyaretçi ve sağlık personeli güvenliğini önceliklendiren hassas güvenlik organizasyonu.",
@@ -117,6 +124,7 @@ export const services = [
   {
     title: "Etkinlik ve Organizasyon Güvenliği",
     slug: "etkinlik-organizasyon-guvenligi",
+    image: "/images/services/etkinlik-guvenligi.jpg",
     icon: CalendarCheck,
     category: "Organizasyon",
     summary: "Konser, fuar, lansman, konferans ve özel davetlerde planlı, görünür ve kontrollü güvenlik.",
@@ -128,6 +136,7 @@ export const services = [
   {
     title: "VIP Koruma Hizmetleri",
     slug: "vip-koruma",
+    image: "/images/services/vip-koruma.jpg",
     icon: ShieldUser,
     category: "Güvenlik",
     summary: "Yönetici, sanatçı, yabancı konuk ve özel misafirler için gizlilik odaklı yakın koruma.",
@@ -139,6 +148,7 @@ export const services = [
   {
     title: "Temizlik Hizmetleri",
     slug: "temizlik-hizmetleri",
+    image: "/images/services/ozel-guvenlik.jpg",
     icon: Sparkles,
     category: "Tesis Hizmetleri",
     summary: "Ofis, tesis, site ve etkinlik alanları için düzenli, hijyenik ve denetlenebilir temizlik operasyonu.",
@@ -150,6 +160,7 @@ export const services = [
   {
     title: "Profesyonel Personel Temini",
     slug: "profesyonel-personel-temini",
+    image: "/images/services/ozel-guvenlik.jpg",
     icon: Users,
     category: "Personel",
     summary: "Kurumsal ihtiyaçlara uygun, eğitimli ve temsil gücü yüksek operasyon personeli temini.",
@@ -161,6 +172,7 @@ export const services = [
   {
     title: "Hostes ve Organizasyon Ekibi Temini",
     slug: "hostes-organizasyon-ekibi-temini",
+    image: "/images/services/etkinlik-guvenligi.jpg",
     icon: Handshake,
     category: "Organizasyon",
     summary: "Lansman, gala, konferans ve özel davetler için profesyonel karşılama ve yönlendirme ekipleri.",
@@ -172,6 +184,7 @@ export const services = [
   {
     title: "Fuar ve Etkinlik Personeli",
     slug: "fuar-etkinlik-personeli",
+    image: "/images/services/etkinlik-guvenligi.jpg",
     icon: BadgeCheck,
     category: "Organizasyon",
     summary: "Fuar standı, ürün tanıtımı, ziyaretçi akışı ve operasyon desteği için eğitimli ekipler.",
@@ -183,6 +196,7 @@ export const services = [
   {
     title: "Danışma ve Karşılama Personeli",
     slug: "danisma-karsilama-personeli",
+    image: "/images/services/avm-guvenligi.jpg",
     icon: Hotel,
     category: "Personel",
     summary: "Plaza, otel, hastane ve kurumsal ofislerde profesyonel ilk temas deneyimi.",

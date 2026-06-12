@@ -61,8 +61,22 @@ export function Footer() {
       </div>
       <div className="border-t border-slate-200 px-4 py-6">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 USR Özel Güvenlik. Tüm hakları saklıdır.</p>
-          <div className="flex gap-4">
+          <div className="grid gap-1">
+            <p>© 2026 USR Özel Güvenlik. Tüm hakları saklıdır.</p>
+            <p>
+              Bu site{" "}
+              <a
+                href="https://midigital.com.tr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-slate-700 hover:text-slate-950"
+              >
+                midigital.com.tr
+              </a>{" "}
+              tarafından hazırlanmıştır.
+            </p>
+          </div>
+          <div className="flex flex-wrap gap-x-4 gap-y-2">
             <Link href="/kvkk" className="hover:text-slate-950">KVKK</Link>
             <Link href="/gizlilik-politikasi" className="hover:text-slate-950">Gizlilik Politikası</Link>
             <Link href="/kullanim-sartlari" className="hover:text-slate-950">Kullanım Şartları</Link>

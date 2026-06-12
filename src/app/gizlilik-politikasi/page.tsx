@@ -13,7 +13,7 @@ export default function PrivacyPage() {
       <section className="bg-gradient-to-b from-white via-[#f8fbff] to-[#eef5fb] py-20 text-slate-950">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: "Ana Sayfa", href: "/" }, { name: "Gizlilik Politikası", href: "/gizlilik-politikasi" }]} />
-          <h1 className="mt-8 text-5xl font-black tracking-tight">Gizlilik Politikası</h1>
+          <h1 className="mt-8 text-4xl font-black tracking-tight sm:text-5xl">Gizlilik Politikası</h1>
         </div>
       </section>
       <section className="mx-auto max-w-4xl px-4 py-20 sm:px-6 lg:px-8">

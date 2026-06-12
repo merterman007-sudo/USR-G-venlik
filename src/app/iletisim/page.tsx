@@ -1,5 +1,6 @@
-import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Breadcrumbs } from "@/components/sections/breadcrumbs";
 import { SectionHeading } from "@/components/sections/section-heading";
@@ -18,29 +19,29 @@ export default function ContactPage() {
       <section className="bg-gradient-to-b from-white via-[#f8fbff] to-[#eef5fb] py-20 text-slate-950">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Breadcrumbs items={[{ name: "Ana Sayfa", href: "/" }, { name: "İletişim", href: "/iletisim" }]} />
-          <h1 className="mt-8 max-w-4xl text-5xl font-black tracking-tight sm:text-6xl">Teklif ve keşif talepleriniz için ulaşın.</h1>
+          <h1 className="mt-8 max-w-4xl text-4xl font-black tracking-tight sm:text-6xl">Teklif ve keşif talepleriniz için ulaşın.</h1>
         </div>
       </section>
-      <section id="teklif" className="bg-[#f4f8fd] py-24">
+      <section id="teklif" className="bg-[#f4f8fd] py-16 sm:py-24">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.8fr_1.2fr] lg:px-8">
           <div>
             <SectionHeading eyebrow="İletişim" title="Aynı gün ön değerlendirme alın" />
             <div className="mt-8 grid gap-4">
-              <a href={company.phoneHref} className="flex gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <Phone className="h-6 w-6 text-[#07162f]" />
-                <span className="font-semibold text-slate-800">{company.phone}</span>
+              <a href={company.phoneHref} className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
+                <Phone className="h-6 w-6 shrink-0 text-[#07162f]" />
+                <span className="min-w-0 font-semibold text-slate-800">{company.phone}</span>
               </a>
-              <a href={`mailto:${company.email}`} className="flex gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <Mail className="h-6 w-6 text-[#07162f]" />
-                <span className="font-semibold text-slate-800">{company.email}</span>
+              <a href={`mailto:${company.email}`} className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
+                <Mail className="h-6 w-6 shrink-0 text-[#07162f]" />
+                <span className="min-w-0 font-semibold text-slate-800">{company.email}</span>
               </a>
-              <Link href={company.whatsapp} target="_blank" className="flex gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <MessageCircle className="h-6 w-6 text-[#20b15a]" />
+              <Link href={company.whatsapp} target="_blank" className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
+                <WhatsAppIcon className="h-6 w-6 shrink-0 text-[#25d366]" />
                 <span className="font-semibold text-slate-800">WhatsApp üzerinden yazın</span>
               </Link>
-              <div className="flex gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <MapPin className="h-6 w-6 text-[#07162f]" />
-                <span className="font-semibold text-slate-800">{company.address}</span>
+              <div className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
+                <MapPin className="h-6 w-6 shrink-0 text-[#07162f]" />
+                <span className="min-w-0 font-semibold leading-7 text-slate-800">{company.address}</span>
               </div>
             </div>
           </div>

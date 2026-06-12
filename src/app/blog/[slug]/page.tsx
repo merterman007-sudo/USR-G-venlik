@@ -56,11 +56,11 @@ export default async function BlogDetailPage({ params }: Props) {
             <p className="mt-8 text-sm font-bold uppercase tracking-[0.2em] text-slate-500">
               {post.category} · {post.readingTime}
             </p>
-            <h1 className="mt-5 text-4xl font-black tracking-tight sm:text-6xl">{post.title}</h1>
+            <h1 className="mt-5 text-3xl font-black tracking-tight sm:text-6xl">{post.title}</h1>
             <p className="mt-6 text-lg leading-8 text-slate-600">{post.excerpt}</p>
           </div>
         </header>
-        <div className="mx-auto max-w-3xl px-4 py-20 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-3xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8">
           <div className="space-y-7 text-lg leading-9 text-slate-700">
             {post.content.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

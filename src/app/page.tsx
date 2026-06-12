@@ -25,6 +25,12 @@ const heroPoints = [
   "Tek çatı altında güvenlik, temizlik ve personel temini",
 ];
 
+const featuredOperations = [
+  services.find((service) => service.slug === "site-residence-guvenligi")!,
+  services.find((service) => service.slug === "fabrika-guvenligi")!,
+  services.find((service) => service.slug === "etkinlik-organizasyon-guvenligi")!,
+];
+
 export default function Home() {
   return (
     <main className="bg-[#f4f8fd]">
@@ -91,9 +97,9 @@ export default function Home() {
 
           <div className="lg:max-w-xl lg:justify-self-end">
             <div className="overflow-hidden rounded-[24px] border border-slate-200 bg-white shadow-2xl shadow-slate-200/70">
-              <div className="relative h-60 w-full">
+              <div className="relative h-64 w-full sm:h-72">
                 <Image
-                  src="/images/usr-security-hero.png"
+                  src="/images/services/ozel-guvenlik.jpg"
                   alt="USR Özel Güvenlik profesyonel güvenlik ekibi"
                   fill
                   priority
@@ -133,6 +139,47 @@ export default function Home() {
                 <LeadForm />
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="overflow-hidden bg-[#07162f] py-14 text-white sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-3xl">
+            <p className="text-xs font-bold uppercase tracking-[0.24em] text-sky-300">Sahada USR Standardı</p>
+            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl lg:text-5xl">
+              Her operasyon alanına özel güvenlik planı
+            </h2>
+            <p className="mt-5 text-base leading-8 text-slate-300 sm:text-lg">
+              Yaşam alanından üretim tesisine, kurumsal etkinlikten yoğun ziyaretçi trafiğine kadar her projeyi kendi
+              risk yapısına göre planlıyoruz.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-4 md:grid-cols-3">
+            {featuredOperations.map((service) => (
+              <Link
+                key={service.slug}
+                href={`/hizmetler/${service.slug}`}
+                className="group relative aspect-[4/3] overflow-hidden rounded-2xl border border-white/10 bg-slate-900"
+              >
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover transition duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/15 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                  <p className="text-xs font-bold uppercase tracking-[0.16em] text-sky-300">{service.category}</p>
+                  <h3 className="mt-2 text-xl font-black">{service.title}</h3>
+                  <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-white/80">
+                    Hizmeti inceleyin
+                    <ArrowRight className="h-4 w-4 transition group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </section>
