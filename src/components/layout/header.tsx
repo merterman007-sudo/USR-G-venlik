@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { Button } from "@/components/ui/button";
 import { company, navigation, services } from "@/data/site";
 import { cn } from "@/lib/utils";
@@ -62,6 +63,15 @@ export function Header() {
         </nav>
 
         <div className="hidden items-center gap-3 lg:flex">
+          <Link
+            href={company.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="grid h-11 w-11 place-items-center rounded-md border border-slate-200 text-slate-700 transition hover:border-[#d62976] hover:bg-pink-50 hover:text-[#d62976]"
+            aria-label="USR Özel Güvenlik Instagram hesabı"
+          >
+            <InstagramIcon className="h-5 w-5" />
+          </Link>
           <Button asChild variant="soft">
             <Link href={company.phoneHref}>
               <Phone className="h-4 w-4" />
@@ -103,7 +113,17 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <div className="mt-3 grid grid-cols-2 gap-3">
+          <Link
+            href={company.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setOpen(false)}
+            className="mt-3 flex h-11 items-center justify-center gap-2 rounded-md border border-pink-200 bg-pink-50 text-sm font-bold text-[#c13584]"
+          >
+            <InstagramIcon className="h-5 w-5" />
+            Instagram&apos;da Takip Edin
+          </Link>
+          <div className="grid grid-cols-2 gap-3">
             <Button asChild variant="soft">
               <Link href={company.phoneHref}>Bizi Arayın</Link>
             </Button>

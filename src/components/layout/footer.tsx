@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Mail, MapPin, Phone } from "lucide-react";
+import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { company, navigation, services } from "@/data/site";
 
 export function Footer() {
@@ -56,6 +57,15 @@ export function Footer() {
               <MapPin className="h-5 w-5 shrink-0" />
               {company.shortAddress}
             </span>
+            <a
+              href={company.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:text-[#c13584]"
+            >
+              <InstagramIcon className="h-5 w-5 shrink-0" />
+              @usrozelguvenlik
+            </a>
           </div>
         </div>
       </div>

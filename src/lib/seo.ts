@@ -62,6 +62,7 @@ export function localBusinessSchema() {
     },
     areaServed: "Türkiye",
     priceRange: "$$",
+    sameAs: ["https://www.instagram.com/usrozelguvenlik/"],
   };
 }
 

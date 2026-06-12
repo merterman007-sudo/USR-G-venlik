@@ -20,6 +20,7 @@ export const company = {
   phone: "0 535 082 84 60",
   phoneHref: "tel:+905350828460",
   whatsapp: "https://wa.me/905350828460",
+  instagram: "https://www.instagram.com/usrozelguvenlik/",
   email: "sonay@usrgrup.tr",
   address:
     "Selahattin Pınar Caddesi No: 23/1 B Blok, Nilüfer Apartmanı, Daire 3, Mecidiyeköy - Şişli / İstanbul",

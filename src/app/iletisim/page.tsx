@@ -1,5 +1,6 @@
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
+import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Breadcrumbs } from "@/components/sections/breadcrumbs";
@@ -38,6 +39,15 @@ export default function ContactPage() {
               <Link href={company.whatsapp} target="_blank" className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
                 <WhatsAppIcon className="h-6 w-6 shrink-0 text-[#25d366]" />
                 <span className="font-semibold text-slate-800">WhatsApp üzerinden yazın</span>
+              </Link>
+              <Link
+                href={company.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+              >
+                <InstagramIcon className="h-6 w-6 shrink-0 text-[#c13584]" />
+                <span className="font-semibold text-slate-800">Instagram&apos;da bizi takip edin</span>
               </Link>
               <div className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
                 <MapPin className="h-6 w-6 shrink-0 text-[#07162f]" />
