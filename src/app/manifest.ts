@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 
+export const dynamic = "force-static";
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "USR Özel Güvenlik",
@@ -11,7 +13,7 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: "#219ebc",
     icons: [
       {
-        src: "/icon.png",
+        src: "icon.png",
         sizes: "512x512",
         type: "image/png",
       },
