@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   authors: [{ name: "USR Özel Güvenlik" }],
   icons: {
     icon: [{ url: "/icon.png", type: "image/png", sizes: "512x512" }],
+    shortcut: [{ url: "/favicon.ico", type: "image/x-icon" }],
     apple: [{ url: "/apple-icon.png", type: "image/png", sizes: "180x180" }],
   },
   robots: {
