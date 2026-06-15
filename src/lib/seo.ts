@@ -52,7 +52,7 @@ export function localBusinessSchema() {
     logo: absoluteUrl("/images/usr-logo.png"),
     image: absoluteUrl("/images/usr-social-card.png"),
     telephone: "+90 535 082 84 60",
-    email: "sonay@usrgrup.tr",
+    email: "bilgi@usrozelguvenlik.com",
     address: {
       "@type": "PostalAddress",
       streetAddress: "Selahattin Pınar Caddesi No: 23/1 B Blok, Nilüfer Apartmanı, Daire 3, Mecidiyeköy",
