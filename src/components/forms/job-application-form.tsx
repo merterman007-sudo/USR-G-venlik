@@ -32,7 +32,7 @@ export function JobApplicationForm() {
       ].join("\n"),
     );
 
-    window.open(`${company.whatsapp}?text=${text}`, "_blank", "noopener,noreferrer");
+    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent("Kariyer başvurusu")}&body=${text}`;
   };
 
   return (
@@ -50,7 +50,7 @@ export function JobApplicationForm() {
         <UploadCloud className="mb-3 h-7 w-7 text-slate-500" />
         <span>{cvName || "CV dosyanızı seçin"}</span>
         <span className="mt-2 max-w-md text-xs leading-5 text-slate-500">
-          Başvuru WhatsApp&apos;ta açıldığında seçtiğiniz CV dosyasını görüşmeye ayrıca ekleyin.
+          E-posta uygulamanız açıldığında seçtiğiniz CV dosyasını iletiye ayrıca ekleyin.
         </span>
         <input
           type="file"

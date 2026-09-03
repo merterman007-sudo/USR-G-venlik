@@ -26,7 +26,7 @@ export function LeadForm() {
       `Mesaj: ${message || "-"}`,
     ].join("\n"));
 
-    window.open(`${company.whatsapp}?text=${text}`, "_blank", "noopener,noreferrer");
+    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent("Teklif talebi")}&body=${text}`;
   };
 
   return (
@@ -47,7 +47,7 @@ export function LeadForm() {
         Teklif Talebini Gönder
       </Button>
       <p className="text-xs leading-5 text-slate-500">
-        Form, WhatsApp üzerinden hızlı teklif sürecini başlatır.
+        Form, e-posta uygulamanız üzerinden hızlı teklif sürecini başlatır.
       </p>
     </form>
   );

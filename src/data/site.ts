@@ -17,9 +17,6 @@ import {
 export const company = {
   name: "USR Özel Güvenlik",
   slogan: "Güvenliği Profesyonellere Bırakın.",
-  phone: "0 535 082 84 60",
-  phoneHref: "tel:+905350828460",
-  whatsapp: "https://wa.me/905350828460",
   instagram: "https://www.instagram.com/usrozelguvenlik/",
   email: "bilgi@usrozelguvenlik.com",
   address:

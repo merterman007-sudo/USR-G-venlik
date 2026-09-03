@@ -51,7 +51,6 @@ export function localBusinessSchema() {
     url: absoluteUrl("/"),
     logo: absoluteUrl("/images/usr-logo.png"),
     image: absoluteUrl("/images/usr-social-card.png"),
-    telephone: "+90 535 082 84 60",
     email: "bilgi@usrozelguvenlik.com",
     address: {
       "@type": "PostalAddress",

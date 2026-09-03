@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, BadgeCheck, CheckCircle2, Phone, ShieldCheck, Star, Users } from "lucide-react";
+import { ArrowRight, BadgeCheck, CheckCircle2, ShieldCheck, Star, Users } from "lucide-react";
 import { LeadForm } from "@/components/forms/lead-form";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
@@ -58,12 +58,6 @@ export default function Home() {
                 <Link href="#teklif">
                   Hemen Teklif Al
                   <ArrowRight className="h-5 w-5" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="soft">
-                <Link href={company.phoneHref}>
-                  <Phone className="h-5 w-5" />
-                  Bizi Arayın
                 </Link>
               </Button>
             </div>
@@ -300,7 +294,6 @@ export default function Home() {
               planını hızlıca paylaşalım.
             </p>
             <div className="mt-8 grid gap-3 text-sm text-slate-600">
-              <p>{company.phone}</p>
               <p>{company.email}</p>
               <p>{company.address}</p>
             </div>

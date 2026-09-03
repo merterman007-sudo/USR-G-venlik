@@ -30,7 +30,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
       ].join("\n"),
     );
 
-    window.open(`${company.whatsapp}?text=${text}`, "_blank", "noopener,noreferrer");
+    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent("Teklif talebi")}&body=${text}`;
   };
 
   return (

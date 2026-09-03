@@ -1,7 +1,6 @@
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import Link from "next/link";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
 import { ContactForm } from "@/components/forms/contact-form";
 import { Breadcrumbs } from "@/components/sections/breadcrumbs";
 import { SectionHeading } from "@/components/sections/section-heading";
@@ -10,7 +9,7 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata = createMetadata({
   title: "İletişim",
-  description: "USR Özel Güvenlik telefon, e-posta, adres, WhatsApp ve teklif iletişim formu.",
+  description: "USR Özel Güvenlik e-posta, adres, Instagram ve teklif iletişim formu.",
   path: "/iletisim",
 });
 
@@ -28,18 +27,10 @@ export default function ContactPage() {
           <div>
             <SectionHeading eyebrow="İletişim" title="Aynı gün ön değerlendirme alın" />
             <div className="mt-8 grid gap-4">
-              <a href={company.phoneHref} className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <Phone className="h-6 w-6 shrink-0 text-[#07162f]" />
-                <span className="min-w-0 font-semibold text-slate-800">{company.phone}</span>
-              </a>
               <a href={`mailto:${company.email}`} className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
                 <Mail className="h-6 w-6 shrink-0 text-[#07162f]" />
                 <span className="min-w-0 font-semibold text-slate-800">{company.email}</span>
               </a>
-              <Link href={company.whatsapp} target="_blank" className="flex min-w-0 gap-4 rounded-lg bg-white p-5 shadow-sm">
-                <WhatsAppIcon className="h-6 w-6 shrink-0 text-[#25d366]" />
-                <span className="font-semibold text-slate-800">WhatsApp üzerinden yazın</span>
-              </Link>
               <Link
                 href={company.instagram}
                 target="_blank"

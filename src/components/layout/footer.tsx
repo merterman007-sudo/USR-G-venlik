@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { company, navigation, services } from "@/data/site";
 
@@ -45,10 +45,6 @@ export function Footer() {
         <div>
           <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-slate-500">İletişim</h2>
           <div className="mt-5 grid gap-4 text-sm text-slate-600">
-            <a href={company.phoneHref} className="flex gap-3 hover:text-slate-950">
-              <Phone className="h-5 w-5 shrink-0" />
-              {company.phone}
-            </a>
             <a href={`mailto:${company.email}`} className="flex gap-3 hover:text-slate-950">
               <Mail className="h-5 w-5 shrink-0" />
               {company.email}

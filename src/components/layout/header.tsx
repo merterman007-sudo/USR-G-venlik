@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { Button } from "@/components/ui/button";
 import { company, navigation, services } from "@/data/site";
@@ -72,12 +72,6 @@ export function Header() {
           >
             <InstagramIcon className="h-5 w-5" />
           </Link>
-          <Button asChild variant="soft">
-            <Link href={company.phoneHref}>
-              <Phone className="h-4 w-4" />
-              Bizi Arayın
-            </Link>
-          </Button>
           <Button asChild variant="navy">
             <Link href="/iletisim#teklif">Hemen Teklif Al</Link>
           </Button>
@@ -123,10 +117,7 @@ export function Header() {
             <InstagramIcon className="h-5 w-5" />
             Instagram&apos;da Takip Edin
           </Link>
-          <div className="grid grid-cols-2 gap-3">
-            <Button asChild variant="soft">
-              <Link href={company.phoneHref}>Bizi Arayın</Link>
-            </Button>
+          <div className="grid gap-3">
             <Button asChild variant="navy">
               <Link href="/iletisim#teklif">Teklif Al</Link>
             </Button>

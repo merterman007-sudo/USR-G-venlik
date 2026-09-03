@@ -2,10 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { ArrowUp, X } from "lucide-react";
-import { WhatsAppIcon } from "@/components/icons/whatsapp-icon";
-import { company } from "@/data/site";
 
 export function SiteEffects() {
   const [visible, setVisible] = useState(false);
@@ -44,16 +41,6 @@ export function SiteEffects() {
           </div>
         </div>
       ) : null}
-
-      <Link
-        href={company.whatsapp}
-        target="_blank"
-        rel="noreferrer"
-        className="fixed bottom-4 right-4 z-50 grid h-14 w-14 place-items-center rounded-full border-2 border-white bg-[#25d366] text-white shadow-2xl shadow-black/30 transition hover:scale-105 sm:bottom-5 sm:right-5 sm:h-16 sm:w-16"
-        aria-label="WhatsApp ile iletişime geç"
-      >
-        <WhatsAppIcon className="h-8 w-8 sm:h-9 sm:w-9" />
-      </Link>
 
       {visible ? (
         <button
